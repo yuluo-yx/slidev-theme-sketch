@@ -1,0 +1,41 @@
+{
+  "name": "slidev-theme-sketch",
+  "version": "0.1.0",
+  "description": "Creative Hand-drawn Doodle & Sketch Theme for Slidev",
+  "author": "Shown",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "doodle",
+    "sketch",
+    "hand-drawn"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "slidev example.md --open",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md"
+  },
+  "dependencies": {
+    "@slidev/types": ">=50.0.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": ">=50.0.0"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "transition": "fade-out",
+      "fonts": {
+        "sans": "LXGW WenKai, PingFang SC, Nunito Sans, sans-serif",
+        "serif": "Caveat, Patrick Hand, cursive",
+        "mono": "Fira Code, monospace"
+      }
+    }
+  }
+}

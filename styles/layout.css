@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Kalam:wght@700&family=LXGW+WenKai:wght@400;700&family=Fira+Code:wght@400;600&display=swap');
+
+:root {
+  --slidev-theme-primary: #1f1f1f;
+  --slidev-theme-accent: #e76f51;
+  --slidev-theme-secondary: #4a5568;
+  --slidev-theme-highlight: #f4a261;
+  --sketch-border-color: #222222;
+  --sketch-ink: #1f1f1f;
+}
+
+/* Global Background with Canvas Texture */
+.slidev-layout {
+  background-color: #fdfdfd;
+  background-image: url('/doodles/bg-canvas.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--sketch-ink);
+  font-family: 'LXGW WenKai', 'PingFang SC', 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Headings */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: 'Patrick Hand', 'LXGW WenKai', 'Caveat', cursive, sans-serif;
+  color: var(--sketch-ink);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.slidev-layout h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.slidev-layout h2 {
+  font-size: 1.85rem;
+  line-height: 1.3;
+}
+
+.slidev-layout h3 {
+  font-size: 1.35rem;
+}
+
+/* Paragraphs & lists */
+.slidev-layout p,
+.slidev-layout li {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.slidev-layout ul {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+.slidev-layout ul > li {
+  position: relative;
+  margin-bottom: 0.45rem;
+}
+
+.slidev-layout ul > li::before {
+  content: '✦';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.05rem;
+  font-size: 0.85em;
+  color: var(--slidev-theme-primary);
+}
+
+/* Strong emphasis */
+.slidev-layout strong {
+  font-weight: 700;
+  color: #000;
+  background: linear-gradient(180deg, transparent 65%, rgba(244, 162, 97, 0.35) 65%);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+/* Links */
+.slidev-layout a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid var(--sketch-border-color);
+  transition: all 0.2s ease;
+}
+
+.slidev-layout a:hover {
+  border-bottom-color: var(--slidev-theme-accent);
+  color: var(--slidev-theme-accent);
+}
+
+/* Code Blocks with Sketch Border */
+.slidev-layout pre {
+  background: #fbfbfb !important;
+  border: 2px solid var(--sketch-border-color) !important;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px !important;
+  box-shadow: 4px 4px 0px var(--sketch-border-color) !important;
+  padding: 1rem 1.25rem !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.88rem !important;
+}
+
+.slidev-layout :not(pre) > code {
+  background: #fff;
+  border: 1.5px solid var(--sketch-border-color);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.88em;
+  font-family: 'Fira Code', monospace;
+  box-shadow: 1.5px 1.5px 0px var(--sketch-border-color);
+}
+
+/* Blockquote - Sketch Note style */
+.slidev-layout blockquote {
+  background: #ffffff;
+  border: 2px solid var(--sketch-border-color);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 4px 4px 0px var(--sketch-border-color);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  position: relative;
+  font-style: italic;
+}
+
+.slidev-layout blockquote::before {
+  content: '“';
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  color: var(--slidev-theme-accent);
+  opacity: 0.4;
+}
+
+/* Tables with Hand-drawn Grid */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid var(--sketch-border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0px var(--sketch-border-color);
+  background: #fff;
+}
+
+.slidev-layout th {
+  background: #f4f4f4;
+  border-bottom: 2px solid var(--sketch-border-color);
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  font-family: 'Patrick Hand', 'LXGW WenKai', sans-serif;
+}
+
+.slidev-layout td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.slidev-layout tr:last-child td {
+  border-bottom: none;
+}
