@@ -2,9 +2,17 @@
   "name": "slidev-theme-sketch",
   "version": "0.1.0",
   "description": "Creative Hand-drawn Doodle & Sketch Theme for Slidev",
-  "author": "Shown",
+  "author": "Yuluo (https://github.com/yuluo-yx)",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuluo-yx/slidev-theme-sketch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuluo-yx/slidev-theme-sketch/issues"
+  },
+  "homepage": "https://github.com/yuluo-yx/slidev-theme-sketch#readme",
   "keywords": [
     "slidev-theme",
     "slidev",
