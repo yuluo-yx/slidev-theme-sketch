@@ -2,6 +2,18 @@
 
 创意手绘涂鸦风格 Slidev 主题（参考原味手绘素描风格设计）。
 
+## 预览
+
+<p align="center">
+  <img src="./screenshots/1.png" width="48%" />
+  <img src="./screenshots/4.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/6.png" width="48%" />
+  <img src="./screenshots/7.png" width="48%" />
+</p>
+
 ## 特性
 
 - 📜 **素描纸质底纹**：内嵌高分辨率微细画布纹理背景，温润耐看

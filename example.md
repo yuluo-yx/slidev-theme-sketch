@@ -64,6 +64,7 @@ part: Part 01
 ::header::
 项目背景与设计理念
 
+::default::
 Slidev 遇见 **手绘涂鸦设计美学**。纯黑线稿素描搭配高质感纸张纹理，让枯燥的技术分享拥有手账般温度。
 
 <div class="grid grid-cols-3 gap-4 mt-6">
@@ -134,6 +135,7 @@ part: Part 03
 ::header::
 代码展示与手绘线框
 
+::default::
 手绘风线框配合清新代码高亮：
 
 ```ts {all|4-8|10-12}
@@ -164,6 +166,7 @@ part: Part 04
 ::header::
 关键成果与数据指标
 
+::default::
 <div class="relative w-full max-w-2xl mx-auto flex items-center justify-between py-6">
   <!-- Left Cloud 80% -->
   <div class="flex flex-col items-center">

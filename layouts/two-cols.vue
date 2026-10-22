@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const props = defineProps({
+  title: {
+    type: String,
+    default: '',
+  },
   part: {
     type: String,
     default: '',
@@ -14,7 +18,7 @@ const props = defineProps({
       <div class="flex items-center gap-3">
         <img src="/doodles/plane-right.png" alt="plane" class="w-10 opacity-85" />
         <div class="text-2xl font-bold font-hand text-black flex items-center">
-          <slot name="header" />
+          <slot name="header">{{ title }}</slot>
         </div>
       </div>
       <div v-if="part" class="sketch-tag font-hand text-xs text-gray-700 bg-white/80">
